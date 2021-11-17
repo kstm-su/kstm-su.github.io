@@ -1,21 +1,24 @@
-# kstm blog
-
-[![Build Status](https://travis-ci.org/kstm-su/blog.svg?branch=travis)](https://travis-ci.org/kstm-su/blog)
+# kstm Homepage
+VuePressで再構成したkstm HP
 
 ## how to post
 
 ### generate
 
 ```bash
-touch docs/new-post.md
+touch src/new-post.md
 ```
 
-```yml
-# docs/.vuepress/config.yml
+```js
+# src/.vuepress/config.js
 
-sidebar:
-  - 'new-post' # add top
-  ...
+sidebar: [
+      {
+        ...,
+        children: [
+            '/posts/',
+            '/posts/new-post',
+            ...
 ```
 
 ### edit
@@ -24,17 +27,15 @@ sidebar:
 <!-- vim docs/new-post.md -->
 
 ---
-title: 'awesome title here'
+title: 'awesome title here' # サイドバーとウィンドウタイトルになります
 ---
 
-# Awesome page title here
+# めっちゃめちゃいい見出し
 
-content goes on...
+面白い話 ...
 
-You can use image placed under `docs/.vuepress/public` and it can resolve by path beggining `/`.
-
-i.e. You placed `docs/.vuepress/public/blog/nice.jpg`:
-![image](/blog/nice.jpg)
+画像は `src/.vuepress/public` 以下に置いてください  
+`src/.vuepress/public` を `/` としてパスを解決することができます
 ```
 
 See also: [Markdown extensions | VuePress](https://v1.vuepress.vuejs.org/guide/markdown.html#markdown-extensions)
@@ -46,9 +47,15 @@ See also: [Markdown extensions | VuePress](https://v1.vuepress.vuejs.org/guide/m
 yarn
 
 # up develop server at localhost:8080
-yarn docs:dev
+yarn src:dev
 ```
 
 ### deploy
 
-Powered by Vercel or Netlify :construction:
+```bash
+yarn src:build
+```
+NOTE: 自動でデプロイできるようにしたい
+
+## old homepage
+https://github.com/kstm-su/old-kstm-su.github.io
