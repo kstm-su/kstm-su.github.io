@@ -1,0 +1,13 @@
+{
+  "name": "kstm-su.github.io",
+  "version": "1.0.0",
+  "description": "kstm HP",
+  "license": "MIT",
+  "scripts": {
+    "src:dev": "vuepress dev src",
+    "src:build": "vuepress build src"
+  },
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
