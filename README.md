@@ -1,12 +1,27 @@
 # kstm Homepage
 VuePressで再構成したkstm HP
 
+## install
+```bash
+yarn install
+```
+
 ## how to post
+
+### see on local
+
+```bash
+# install dependencies
+yarn
+
+# up develop server at localhost:8080
+yarn src:dev
+```
 
 ### generate
 
 ```bash
-touch src/new-post.md
+touch src/posts/new-post.md
 ```
 
 ```js
@@ -39,16 +54,6 @@ title: 'awesome title here' # サイドバーとウィンドウタイトルに�
 ```
 
 See also: [Markdown extensions | VuePress](https://v1.vuepress.vuejs.org/guide/markdown.html#markdown-extensions)
-
-### see on local
-
-```bash
-# install dependencies
-yarn
-
-# up develop server at localhost:8080
-yarn src:dev
-```
 
 ### deploy
 

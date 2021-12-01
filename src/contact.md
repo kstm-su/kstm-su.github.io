@@ -12,3 +12,9 @@ kstmに関するご連絡・ご質問などは kstm-ml[at]shinshu-u.ac.jp まで
 ## Twitter
 
 [Twitter](https://twitter.com/kstm_)
+
+## Google Form
+
+※ `@shinshu-u.ac.jp`のアカウントでログインする必要があります
+
+<ContactForm />
