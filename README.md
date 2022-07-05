@@ -70,6 +70,10 @@ See also: [Markdown extensions | VuePress](https://v1.vuepress.vuejs.org/guide/m
 ### deploy
 commitする前に次のコマンドを実行する必要があります
 
+❗注意❗: 以下を実行するとdocs以下のファイルが再生成されるためCNAMEファイルが削除されますが、変更を取り消してください！
+
+間違えてCNAMEを削除したままmasterにpushした場合は、GitHubPagesの設定の[CustomDomain](https://github.com/kstm-su/kstm-su.github.io/settings/pages)から再度追加ができます
+
 ```bash
 yarn src:build
 ```
