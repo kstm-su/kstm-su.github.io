@@ -18,6 +18,7 @@ module.exports = {
         path: '/posts/',
         children: [
           '/posts/',
+          '/posts/geekhaku',
           '/posts/ictsc-2020',
           '/posts/generate_bacon',
           '/posts/advent-calendar-2018',

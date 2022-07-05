@@ -1,14 +1,16 @@
 # kstm Homepage
 VuePressで再構成したkstm HP
 
-## install
+## インストール方法
+cloneした後に以下を実行してください。
+branchはmasterではなく、新たに切ってください。
 ```bash
 yarn install
 ```
 
-## how to post
+## 新規記事の作り方
 
-### see on local
+### localで環境を立ち上げる
 
 ```bash
 # install dependencies
@@ -18,12 +20,15 @@ yarn
 yarn src:dev
 ```
 
-### generate
+### 新しく記事を作る
 
 ```bash
 touch src/posts/new-post.md
 ```
 
+サイドバーに記事へのリンクを追加する
+
+`/posts`からパスを書く必要があります
 ```js
 # src/.vuepress/config.js
 
@@ -36,10 +41,11 @@ sidebar: [
             ...
 ```
 
-### edit
+### 編集する
+先ほど作ったmdファイルを編集してください
 
 ```markdown
-<!-- vim docs/new-post.md -->
+<!-- vim src/posts/new-post.md -->
 
 ---
 title: 'awesome title here' # サイドバーとウィンドウタイトルになります
@@ -55,12 +61,19 @@ title: 'awesome title here' # サイドバーとウィンドウタイトルに�
 
 See also: [Markdown extensions | VuePress](https://v1.vuepress.vuejs.org/guide/markdown.html#markdown-extensions)
 
+### 確認事項
+
+1. blogのページで作った記事タイトルがサイドバーに表示されているか
+2. 記事は期待通りに表示されているか(画像・リンクを含む)
+3. [deploy](#deploy)のコマンドを実行したか
+
 ### deploy
+commitする前に次のコマンドを実行する必要があります
 
 ```bash
 yarn src:build
 ```
-NOTE: 自動でデプロイできるようにしたい
+NOTE: 自動でビルド->公開できるようにしたい
 
 ## old homepage
 https://github.com/kstm-su/old-kstm-su.github.io
