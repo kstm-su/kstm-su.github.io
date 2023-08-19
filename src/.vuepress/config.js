@@ -1,6 +1,9 @@
 module.exports = {
   title: 'kstm',
   dest: 'docs/',
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg', href: '/kstm.svg'}]
+  ],
   themeConfig: {
     logo: '/kstm.svg',
     search: false,
