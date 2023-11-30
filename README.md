@@ -65,19 +65,18 @@ See also: [Markdown extensions | VuePress](https://v1.vuepress.vuejs.org/guide/m
 
 1. blogのページで作った記事タイトルがサイドバーに表示されているか
 2. 記事は期待通りに表示されているか(画像・リンクを含む)
-3. [deploy](#deploy)のコマンドを実行したか
 
-### deploy
-commitする前に次のコマンドを実行する必要があります
+### (参考) デプロイされるファイルの確認
 
-❗注意❗: 以下を実行するとdocs以下のファイルが再生成されるためCNAMEファイルが削除されますが、変更を取り消してください！
+GitHub Actions を利用した自動デプロイが行われます。条件は master ブランチへのプッシュです。設定ファイルは `.github/workflows/vuepress.yml` にあります。
 
-間違えてCNAMEを削除したままmasterにpushした場合は、GitHubPagesの設定の[CustomDomain](https://github.com/kstm-su/kstm-su.github.io/settings/pages)から再度追加ができます
+ドメインはリポジトリの設定から編集する必要があります。以前のようにデプロイ範囲内に CNAME ファイルを用意する必要はなくなりました。
+
+次のコマンドを実行することで、手元で実際にデプロイされるファイルを確認することができます。生成場所は docs ディレクトリ以下です。
 
 ```bash
 yarn src:build
 ```
-NOTE: 自動でビルド->公開できるようにしたい
 
 ## old homepage
 https://github.com/kstm-su/old-kstm-su.github.io
