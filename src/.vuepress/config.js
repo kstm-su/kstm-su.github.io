@@ -2,7 +2,7 @@ module.exports = {
   title: 'kstm',
   dest: 'docs/',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg', href: '/kstm.svg'}]
+    ['link', { rel: 'icon', type: 'image/svg', href: '/kstm.svg' }]
   ],
   themeConfig: {
     logo: '/kstm.svg',
@@ -13,7 +13,7 @@ module.exports = {
       { text: 'Contact', link: '/contact' },
       { text: 'Blog', link: '/posts/' }
     ],
-    
+
     // HACK: 自動でインデックスできると楽
     sidebar: [
       {
@@ -21,6 +21,7 @@ module.exports = {
         path: '/posts/',
         children: [
           '/posts/',
+          '/posts/20231201-auto-build.md',
           '/posts/geekhaku',
           '/posts/ictsc-2020',
           '/posts/generate_bacon',
