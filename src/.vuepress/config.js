@@ -19,7 +19,7 @@ module.exports = {
         path: "/posts/",
         children: [
           "/posts/",
-          "/posts/202405-bbq.md",
+          "/posts/20240515-bbq",
           "/posts/20231201-auto-build.md",
           "/posts/geekhaku",
           "/posts/ictsc-2020",
