@@ -1,8 +1,13 @@
-module.exports = {
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress'
+
+export default defineUserConfig({
+  bundler: viteBundler(),
   title: "kstm",
   dest: "docs/",
   head: [["link", { rel: "icon", type: "image/svg", href: "/kstm.svg" }]],
-  themeConfig: {
+  theme: defaultTheme({
     logo: "/kstm.svg",
     search: false,
     nav: [
@@ -42,5 +47,5 @@ module.exports = {
         ],
       },
     ],
-  },
-};
+  }),
+})
