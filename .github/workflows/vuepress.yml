@@ -29,12 +29,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      - uses: borales/actions-yarn@v4
-        with:
-          cmd: install
-      - uses: borales/actions-yarn@v4
-        with:
-          cmd: src:build
+      - run: npm ci
+      - run: npm run src:build
       - uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
