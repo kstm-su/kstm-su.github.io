@@ -3,7 +3,15 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    vuePluginOptions: {
+      template: {
+        transformAssetUrls: {
+          includeAbsolute: false
+        }
+      }
+    }
+  }),
   title: "kstm",
   dest: "docs/",
   head: [["link", { rel: "icon", type: "image/svg", href: "/kstm.svg" }]],
