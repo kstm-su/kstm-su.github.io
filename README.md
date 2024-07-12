@@ -5,7 +5,7 @@ VuePressで再構成したkstm HP
 cloneした後に以下を実行してください。
 branchはmasterではなく、新たに切ってください。
 ```bash
-yarn install
+npm ci
 ```
 
 ## 新規記事の作り方
@@ -14,10 +14,10 @@ yarn install
 
 ```bash
 # install dependencies
-yarn
+npm ci
 
 # up develop server at localhost:8080
-yarn src:dev
+npm run src:dev
 ```
 
 ### 新しく記事を作る
@@ -75,7 +75,7 @@ GitHub Actions を利用した自動デプロイが行われます。条件は m
 次のコマンドを実行することで、手元で実際にデプロイされるファイルを確認することができます。生成場所は docs ディレクトリ以下です。
 
 ```bash
-yarn src:build
+npm run src:build
 ```
 
 ## old homepage
