@@ -3,8 +3,6 @@ home: true
 heroImage: /kstm.svg
 heroText: ものづくりサークル kstm
 tagline: kstmは信州大学工学部の情報系サークルです
-actionText: kstmについて→
-actionLink: /aboutus
 footer: MIT Licensed | Copyright © 2021 kstm-su
 ---
 

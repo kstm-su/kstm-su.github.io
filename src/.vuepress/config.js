@@ -18,7 +18,7 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: "/kstm.svg",
     search: false,
-    nav: [
+    navbar: [
       { text: "kstmについて", link: "/aboutus" },
       { text: "Join", link: "/join" },
       { text: "Contact", link: "/contact" },
