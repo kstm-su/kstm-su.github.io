@@ -10,6 +10,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.14",
     "@vuepress/theme-default": "^2.0.0-rc.37",
+    "sass-embedded": "^1.79.4",
     "vuepress": "^2.0.0-rc.14"
   }
 }
