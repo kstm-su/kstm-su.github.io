@@ -1,0 +1,15 @@
+:root {
+    --vp-c-accent: #ffa203; // darken(#FFA100, 10%)
+    --vp-c-accent-bg: #886000;
+    
+    --navbar-height: 4.5rem;
+    --sidebar-width: 20rem;
+}
+
+.hint-container {
+    background-color: var(--vp-c-bg-alt);
+    border-left: 8px solid;
+    &.tip {
+        border-color: var(--hint-c-title);
+    }
+}
