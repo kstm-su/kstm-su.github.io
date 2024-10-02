@@ -18,6 +18,9 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: "/kstm.svg",
     search: false,
+    
+    // NOTE: Contributorの表示が意図しないものになるので強制非表示
+    contributors: false,
     navbar: [
       { text: "kstmについて", link: "/aboutus" },
       { text: "Join", link: "/join" },
