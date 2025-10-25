@@ -35,6 +35,7 @@ export default defineUserConfig({
         path: "/posts/",
         children: [
           "/posts/",
+          "/posts/20251025-ctf-answer",
           "/posts/20250810siojiri",
           "/posts/20250705-icpc-2025",
           "/posts/20241012-ctf-answer",
