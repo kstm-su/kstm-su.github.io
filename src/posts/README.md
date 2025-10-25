@@ -2,6 +2,7 @@
 サークルメンバーによるblogです｡  
 
 ## 光芒祭CTF 解説
+[2025](/posts/20251025-ctf-answer.html)
 [2024](/posts/20241012-ctf-answer.html)
 
 ## アドベントカレンダー

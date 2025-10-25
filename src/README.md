@@ -6,6 +6,10 @@ tagline: kstmは信州大学工学部の情報系サークルです
 footer: MIT Licensed | Copyright © 2021 kstm-su
 ---
 
+::: tip 光芒祭CTF 2025
+[2025年の光芒祭CTFの解説](/posts/20251025-ctf-answer.html)を掲載しました。
+:::
+
 ::: tip blog
 部員による記事を[blog](/posts/)にて不定期で更新しています｡  
 :::
